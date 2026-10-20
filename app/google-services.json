@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213188455146",
+    "project_id": "cs175-roommate-app",
+    "storage_bucket": "cs175-roommate-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213188455146:android:305f3783c63f6a32d30593",
+        "android_client_info": {
+          "package_name": "edu.sjsu.cs175.roommate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFPabjUqklXcmpnGIjCnRk8Y9NnxoXwxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
