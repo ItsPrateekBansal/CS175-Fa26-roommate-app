@@ -41,4 +41,11 @@
     <string name="error_budget">Enter a budget above 0</string>
     <string name="error_choose_options">Choose a sleep schedule and cleanliness level</string>
     <string name="error_generic">Something went wrong. Try again.</string>
+    <!-- Grocery -->
+    <string name="hint_grocery_item">Add an item</string>
+    <string name="action_add">Add</string>
+    <string name="action_delete">Delete</string>
+    <string name="grocery_empty">The list is empty. Add something your household needs.</string>
+    <string name="error_grocery_load">Couldn\'t load the grocery list. Check your connection and try again.</string>
+    <string name="error_signed_out">Sign in to use this screen.</string>
 </resources>
