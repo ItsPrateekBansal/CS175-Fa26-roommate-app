@@ -41,4 +41,44 @@
     <string name="error_budget">Enter a budget above 0</string>
     <string name="error_choose_options">Choose a sleep schedule and cleanliness level</string>
     <string name="error_generic">Something went wrong. Try again.</string>
+
+    <!-- Household -->
+    <string name="household_setup_title">Set up your household</string>
+    <string name="household_setup_body">Create a household and share its code with your roommates, or join one with a code.</string>
+    <string name="create_household">Create household</string>
+    <string name="or_join">or join an existing one</string>
+    <string name="hint_household_code">Household code</string>
+    <string name="join_household">Join household</string>
+    <string name="error_bad_code">No household found with that code</string>
+    <string name="default_household_name">Our home</string>
+    <string name="household_name_for">%1$s\'s home</string>
+    <string name="household_code">Code: %1$s (tap to copy)</string>
+    <string name="code_copied">Household code copied</string>
+
+    <!-- Expenses -->
+    <string name="balances">Balances</string>
+    <string name="expenses_header">Expenses</string>
+    <string name="no_expenses">No expenses yet. Tap + to add one.</string>
+    <string name="all_settled">All settled up</string>
+    <string name="you">You</string>
+    <string name="former_member">Former member</string>
+    <string name="you_owe">You owe %1$s %2$s</string>
+    <string name="owes_you">%1$s owes you %2$s</string>
+    <string name="owes">%1$s owes %2$s %3$s</string>
+    <string name="expense_subtitle">Paid by %1$s · %2$s · %3$s</string>
+    <string name="split_equal">Split equally</string>
+    <string name="split_custom">Custom amounts</string>
+    <string name="delete_expense_title">Delete expense?</string>
+    <string name="delete_expense_message">Delete "%1$s" for everyone in the household?</string>
+    <string name="delete">Delete</string>
+
+    <string name="title_add_expense">Add expense</string>
+    <string name="hint_expense_title">What was it for?</string>
+    <string name="hint_amount">Total amount ($)</string>
+    <string name="hint_paid_by">Paid by</string>
+    <string name="label_split">How to split</string>
+    <string name="equal_preview">%1$s each, %2$d people</string>
+    <string name="save_expense">Save expense</string>
+    <string name="error_amount">Enter a valid amount</string>
+    <string name="error_split_total">Shares add up to %1$s, but the total is %2$s</string>
 </resources>

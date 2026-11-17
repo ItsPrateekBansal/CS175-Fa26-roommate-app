@@ -25,7 +25,8 @@ app/src/main/java/edu/sjsu/cs175/roommate/
   auth/ProfileActivity.java
   ui/MatchesFragment.java  roommate matching
   ui/ChatFragment.java
-  ui/ExpensesFragment.java expense split
+  expenses/                expense split (list, balances, add form)
+  data/HouseholdRepository.java  create or join a household
   ui/ChoresFragment.java   chores calendar and reminders
   ui/GroceryFragment.java
   ui/LeaseInfoActivity.java
@@ -61,3 +62,17 @@ sleep time, cleanliness, smoking, and pets match when their values are equal
 (text comparisons ignore case). Missing preferences are excluded from the score,
 and candidates with no comparable preferences are omitted. Ties favor more
 compared fields, then name and document ID.
+
+## Households
+
+Expenses, grocery and chores are shared per household. The first time a user opens
+Expenses, they create a household or join one with a code. The code is the
+household document ID, shown on the Expenses screen (tap to copy).
+`users/{uid}.householdId` links a user to their household.
+
+## Expense split
+
+Each expense stores `shares`, a map of user ID to the dollars that person owes.
+Equal splits are computed when the bill is added, so a roommate who joins later
+is not charged for older bills. Balances and "who owes whom" are calculated in
+`expenses/BalanceCalculator.java`, which works in cents to avoid rounding errors.
