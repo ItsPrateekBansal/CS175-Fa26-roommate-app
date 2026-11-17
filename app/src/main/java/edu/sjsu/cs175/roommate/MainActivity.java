@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import edu.sjsu.cs175.roommate.auth.LoginActivity;
 import edu.sjsu.cs175.roommate.auth.ProfileActivity;
 import edu.sjsu.cs175.roommate.databinding.ActivityMainBinding;
@@ -26,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        }
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
@@ -82,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, LeaseInfoActivity.class));
             return true;
         } else if (id == R.id.action_logout) {
+            FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(this, LoginActivity.class));
             finish();
             return true;
