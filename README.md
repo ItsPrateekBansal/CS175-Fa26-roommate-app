@@ -32,3 +32,13 @@ app/src/main/java/edu/sjsu/cs175/roommate/
 ```
 
 Profile, Lease Info and Log out are in the top-right menu.
+
+## Roommate matching
+
+The Matches screen reads `users/{authUid}` profiles from Firestore, excludes the
+signed-in user, and ranks candidates by the percentage of comparable preferences
+that match. Budget matches when values differ by at most 20% of the larger value;
+sleep time, cleanliness, smoking, and pets match when their values are equal
+(text comparisons ignore case). Missing preferences are excluded from the score,
+and candidates with no comparable preferences are omitted. Ties favor more
+compared fields, then name and document ID.
