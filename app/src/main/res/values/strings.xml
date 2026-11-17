@@ -15,4 +15,30 @@
     <string name="login">Log in</string>
     <string name="signup">Create account</string>
     <string name="tagline">Find roommates. Share the work.</string>
+
+    <string name="title_profile_setup">Set up your profile</string>
+    <string name="hint_name">Full name</string>
+    <string name="hint_budget">Monthly rent budget ($)</string>
+    <string name="label_sleep">Sleep schedule</string>
+    <string name="label_cleanliness">Cleanliness</string>
+    <string name="label_smoking">I smoke</string>
+    <string name="label_pets">I have or want pets</string>
+    <string name="save_profile">Save profile</string>
+    <string name="profile_saved">Profile saved</string>
+    <string name="profile_required">Please save your profile first</string>
+
+    <!-- Stored in Firestore as-is. Keep in sync with ProfileActivity constants. -->
+    <string name="sleep_early" translatable="false">Early bird</string>
+    <string name="sleep_night" translatable="false">Night owl</string>
+    <string name="sleep_flexible" translatable="false">Flexible</string>
+    <string name="clean_very_tidy" translatable="false">Very tidy</string>
+    <string name="clean_average" translatable="false">Average</string>
+    <string name="clean_relaxed" translatable="false">Relaxed</string>
+
+    <string name="error_email">Enter a valid email</string>
+    <string name="error_password">Password must be at least 6 characters</string>
+    <string name="error_required">Required</string>
+    <string name="error_budget">Enter a budget above 0</string>
+    <string name="error_choose_options">Choose a sleep schedule and cleanliness level</string>
+    <string name="error_generic">Something went wrong. Try again.</string>
 </resources>
